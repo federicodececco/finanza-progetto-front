@@ -1,3 +1,11 @@
 export default function HomePage() {
-  return <h1>homepage</h1>;
+  return (
+    <>
+      <div className='mx-auto max-w-5xl'>
+        <div>
+          <h1>homepage</h1>
+        </div>
+      </div>
+    </>
+  )
 }
