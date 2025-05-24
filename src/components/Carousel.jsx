@@ -26,7 +26,7 @@ export default function Carousel() {
   }
 
   return (
-    <div className='relative mx-auto h-128 w-full overflow-hidden rounded-b-2xl shadow-lg'>
+    <div className='relative mx-auto h-150 w-full overflow-hidden rounded-b-2xl shadow-lg'>
       <AnimatePresence initial={false} exitBeforeEnter>
         {elements.map(
           (item, index) =>
@@ -44,7 +44,7 @@ export default function Carousel() {
                   alt={item.nome}
                   className='h-full w-full object-cover'
                 />
-                <div className='absolute bottom-10 left-50 h-[40%] w-120 rounded-xl bg-gradient-to-r from-indigo-700/70 to-violet-700/70'>
+                <div className='absolute bottom-10 left-50 h-[40%] rounded-xl bg-gradient-to-r from-indigo-700/70 to-violet-700/70 p-4'>
                   <h3 className='mt-2 text-2xl font-semibold text-white'>
                     {item.title}
                   </h3>
@@ -55,7 +55,9 @@ export default function Carousel() {
                         return <li className='text-left'>{feat}</li>
                       })}
                     </ul>
-                    <button className='pt-2'>{item.cta} ></button>
+                    <button className='cursor-pointer pt-2'>
+                      {item.cta} >
+                    </button>
                   </div>
                 </div>
               </motion.div>
@@ -65,14 +67,14 @@ export default function Carousel() {
 
       <button
         onClick={prevSlide}
-        className='bg-opacity-75 hover:bg-opacity-100 absolute top-1/2 left-4 -translate-y-1/2 transform rounded-full bg-white p-2'
+        className='bg-opacity-75 hover:bg-opacity-100 absolute top-1/2 left-4 -translate-y-1/2 transform cursor-pointer rounded-full bg-white p-2'
       >
         <ChevronLeft />
       </button>
 
       <button
         onClick={nextSlide}
-        className='bg-opacity-75 hover:bg-opacity-100 absolute top-1/2 right-4 -translate-y-1/2 transform rounded-full bg-white p-2'
+        className='bg-opacity-75 hover:bg-opacity-100 absolute top-1/2 right-4 -translate-y-1/2 transform cursor-pointer rounded-full bg-white p-2'
       >
         <ChevronRight />
       </button>
