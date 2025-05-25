@@ -25,8 +25,8 @@ export default function Carousel() {
   }
 
   return (
-    <section className='w-full'>
-      <div className='relative mx-auto h-[650px] w-full overflow-hidden rounded-b-2xl shadow-lg'>
+    <section className='h-[70%] w-full'>
+      <div className='relative mx-auto h-full w-full overflow-hidden rounded-b-2xl shadow-lg'>
         <AnimatePresence initial={false} exitBeforeEnter>
           {elements.map(
             (item, index) =>

@@ -5,7 +5,7 @@ export default function Header() {
     <header>
       {/* navbar */}
 
-      <nav className='bg-gradient-to-r from-indigo-700 to-violet-700 shadow-lg md:p-4'>
+      <nav className='sticky top-0 bg-gradient-to-r from-indigo-700 to-violet-700 shadow-lg md:p-4'>
         <div className='grid grid-cols-10'>
           <Link to='/' className='col-span-4 text-center text-4xl'>
             <div className='text-primary-light'>Generical Fintech</div>
