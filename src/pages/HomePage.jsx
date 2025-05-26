@@ -41,17 +41,22 @@ export default function HomePage() {
           <div className='relative mx-auto max-w-5xl'>
             <Hero></Hero>
             {/* cards */}
-            <div className='grid grid-cols-2 gap-4'>
+            <div className='grid grid-cols-3 grid-rows-6'>
               {elements.map((element, index) => (
                 <div
                   key={element.id}
                   className={
-                    index % 2 === 0 ? 'col-span-2 col-start-1' : 'col-start-2'
+                    index % 2 === 0
+                      ? 'col-span-2 col-start-1 row-span-2'
+                      : 'col-start-2 row-span-2'
                   }
                 >
                   <Card element={element} key={element.id}></Card>
                 </div>
               ))}
+              <div className='col-start-3 row-start-2 text-right text-slate-900'>
+                <h1 className=''>QR</h1>
+              </div>
             </div>
             <Link>
               <h1 className='shadow-3xl absolute -bottom-5 left-[50%] -translate-x-1/2 rounded-lg bg-blue-600/70 px-2 py-1'>
