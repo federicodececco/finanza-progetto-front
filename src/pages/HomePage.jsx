@@ -26,7 +26,7 @@ export default function HomePage() {
     <>
       <div className='mx-auto'>
         <div className='h-screen'>
-          <Carousel></Carousel>
+          <Carousel className='z-0'></Carousel>
           <div className='mx-auto max-w-6xl text-indigo-700 italic'>
             <h1 className='pt-6 text-left text-6xl font-semibold text-shadow-md'>
               Progetta il tuo domani...
@@ -37,11 +37,11 @@ export default function HomePage() {
           </div>
         </div>
         {/* card section */}
-        <div className='h-screen bg-red-100'>
+        <div className='h-screen'>
           <div className='relative mx-auto max-w-5xl'>
             <Hero></Hero>
             {/* cards */}
-            <div className='grid grid-cols-3 grid-rows-6'>
+            <div className='relative grid grid-cols-3 grid-rows-6'>
               {elements.map((element, index) => (
                 <div
                   key={element.id}
@@ -58,7 +58,7 @@ export default function HomePage() {
                 <h1 className=''>QR</h1>
               </div>
             </div>
-            <Link>
+            <Link className=''>
               <h1 className='shadow-3xl absolute -bottom-5 left-[50%] -translate-x-1/2 rounded-lg bg-blue-600/70 px-2 py-1'>
                 Scopri di più
               </h1>
