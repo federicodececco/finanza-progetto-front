@@ -6,6 +6,7 @@ import DetailPage from './pages/DetailPage'
 import AllConcepts from './pages/AllConcepts'
 /* layout */
 import DefaultLayout from './layouts/DefaultLayout'
+
 export default function App() {
   return (
     <BrowserRouter>

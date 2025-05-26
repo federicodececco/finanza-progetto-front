@@ -4,6 +4,7 @@ import Card from '../components/Card'
 import { useState, useEffect } from 'react'
 import axios from '../../api/axios'
 import { Link } from 'react-router'
+import FaqSection from '../components/FaqSection'
 export default function HomePage() {
   const [elements, setElements] = useState([])
   const fetchElements = () => {
@@ -15,7 +16,6 @@ export default function HomePage() {
     const newElements = [3]
     for (let i = 0; i < 3; i++) {
       newElements[i] = arr[i]
-      console.log(elements[i])
     }
     return newElements
   }
@@ -54,12 +54,13 @@ export default function HomePage() {
               ))}
             </div>
             <Link>
-              <h1 className='absolute -bottom-5 left-[50%] -translate-x-1/2'>
+              <h1 className='shadow-3xl absolute -bottom-5 left-[50%] -translate-x-1/2 rounded-lg bg-blue-600/70 px-2 py-1'>
                 Scopri di più
               </h1>
             </Link>
           </div>
         </div>
+        <FaqSection></FaqSection>
       </div>
     </>
   )
