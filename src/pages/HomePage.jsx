@@ -36,7 +36,7 @@ export default function HomePage() {
             </h1>
           </div>
         </div>
-        {/* section 1 */}
+        {/* card section */}
         <div className='h-screen bg-red-100'>
           <div className='relative mx-auto max-w-5xl'>
             <Hero></Hero>
