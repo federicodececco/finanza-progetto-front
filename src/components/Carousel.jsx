@@ -44,7 +44,7 @@ export default function Carousel() {
                     alt={item.nome}
                     className='h-full w-full object-cover'
                   />
-                  <div className='absolute bottom-10 left-50 h-[40%] rounded-xl bg-gradient-to-r from-indigo-700/70 to-violet-700/70 p-4'>
+                  <div className='glass absolute bottom-10 left-50 h-[40%] rounded-xl bg-gradient-to-r from-indigo-700/30 to-violet-700/30 p-4'>
                     <h3 className='mt-2 text-2xl font-semibold text-white'>
                       {item.title}
                     </h3>

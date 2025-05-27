@@ -1,6 +1,6 @@
 import axios from '../../api/axios'
 import { useState, useEffect } from 'react'
-
+import FullCard from '../components/FullCard'
 export default function AllConcepts() {
   const [concepts, setConcepts] = useState([])
 
@@ -15,11 +15,13 @@ export default function AllConcepts() {
   }, [])
   return (
     <>
-      <h1>Concetti</h1>
-      <div>
-        {concepts.map(concept => (
-          <div key={concept.id}>{concept.name}</div>
-        ))}
+      <div className='mt-18'>
+        <h1>Le Nostre Soluzioni</h1>
+        <div>
+          {concepts.map(item => {
+            return <FullCard item={item} />
+          })}
+        </div>
       </div>
     </>
   )
