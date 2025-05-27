@@ -75,7 +75,7 @@ export default function NewHeader() {
           </ul>
         </div>
         <a className='btn btn-ghost text-xl hover:bg-violet-700'>
-          <Link to='/'>GENERICAL FINTECH</Link>
+          GENERICAL FINTECH
         </a>
       </div>
       <div className='navbar-center hidden lg:flex'>

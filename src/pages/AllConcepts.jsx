@@ -17,9 +17,9 @@ export default function AllConcepts() {
     <>
       <div className='mt-18'>
         <h1>Le Nostre Soluzioni</h1>
-        <div>
+        <div className='mx-auto max-w-5xl'>
           {concepts.map(item => {
-            return <FullCard item={item} />
+            return <FullCard item={item} key={item.id} />
           })}
         </div>
       </div>
