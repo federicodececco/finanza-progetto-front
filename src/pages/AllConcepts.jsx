@@ -15,9 +15,11 @@ export default function AllConcepts() {
   }, [])
   return (
     <>
-      <div className='mt-18'>
-        <h1>Le Nostre Soluzioni</h1>
-        <div className='mx-auto max-w-5xl'>
+      <div className='mt-30'>
+        <div className='container mx-auto mb-18 text-center text-5xl font-semibold text-indigo-700 italic text-shadow-md'>
+          <h1>Le Nostre Soluzioni</h1>
+        </div>
+        <div className='container mx-auto'>
           {concepts.map(item => {
             return <FullCard item={item} key={item.id} />
           })}

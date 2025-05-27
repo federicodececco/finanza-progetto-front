@@ -74,7 +74,7 @@ export default function NewHeader() {
             </li>
           </ul>
         </div>
-        <a className='btn btn-ghost text-xl hover:bg-violet-700'>
+        <a className='btn btn-ghost text-xl hover:bg-violet-700' href='/'>
           GENERICAL FINTECH
         </a>
       </div>
