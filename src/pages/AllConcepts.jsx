@@ -1,6 +1,7 @@
 import axios from '../../api/axios'
 import { useState, useEffect } from 'react'
 import FullCard from '../components/FullCard'
+
 export default function AllConcepts() {
   const [concepts, setConcepts] = useState([])
 
@@ -15,8 +16,11 @@ export default function AllConcepts() {
   }, [])
   return (
     <>
-      <div className='mt-30'>
-        <div className='container mx-auto mb-18 text-center text-5xl font-semibold text-indigo-700 italic text-shadow-md'>
+      <div className=''>
+        <div className='shadow-md'>
+          <img src='/img/card.jpg' alt='' />
+        </div>
+        <div className='container mx-auto mt-8 mb-18 text-center text-5xl font-semibold text-indigo-700 italic text-shadow-md'>
           <h1>Le Nostre Soluzioni</h1>
         </div>
         <div className='container mx-auto'>

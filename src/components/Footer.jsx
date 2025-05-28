@@ -1,8 +1,8 @@
 export default function Footer() {
   return (
     <>
-      <section className='relative h-screen'>
-        <div className='absolute bottom-0'>
+      <section className='relative pt-20'>
+        <div className=''>
           <div className='container mx-auto'>
             <h1 className='text-slate-500'>
               Messaggio pubblicitario con finalità promozionale. Investire
@@ -10,7 +10,8 @@ export default function Footer() {
               quelli futuri.
             </h1>
           </div>
-          <div className='w-screen bg-indigo-800 py-2 text-indigo-100'>
+
+          <div className='bg-indigo-800 py-2 text-indigo-100'>
             <footer className='container mx-auto grid grid-cols-4 gap-4'>
               <div className='col-span-1'>
                 <h1 className='py-3'> Informazioni e servizi</h1>

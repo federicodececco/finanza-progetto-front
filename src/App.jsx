@@ -14,7 +14,7 @@ export default function App() {
         <Route element={<DefaultLayout />}>
           <Route path='/' element={<HomePage />} />
           <Route path='/products' element={<AllConcepts />} />
-          <Route path='/products/detail/:id' element={<DetailPage />} />
+          <Route path='/products/details/:slug' element={<DetailPage />} />
         </Route>
       </Routes>
     </BrowserRouter>
