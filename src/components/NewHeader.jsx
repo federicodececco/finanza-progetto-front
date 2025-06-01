@@ -103,7 +103,10 @@ export default function NewHeader() {
         </ul>
       </div>
       <div className='navbar-end'>
-        <a className='btn bg-violet-700 text-white hover:bg-blue-600/50'>
+        <a
+          className='btn bg-violet-700 text-white hover:bg-blue-600/50'
+          href='http://localhost:8080/login'
+        >
           Log In
         </a>
       </div>
