@@ -23,16 +23,16 @@ export default function DetailPage() {
           <h2 className='pt-1 italic'>{concept.description}</h2>
         </div>
         <div className='grid grid-cols-5 gap-2'>
-          <h1 className='borde564r-1 col-span-2 mt-4 rounded-lg border-indigo-700/70 bg-gradient-to-r from-violet-700/70 to-indigo-700/70 p-2 text-lg text-white'>
+          <h1 className='col-span-2 mt-4 rounded-lg border-1 border-indigo-700/70 bg-gradient-to-r from-violet-700/70 to-indigo-700/70 p-3 text-lg text-white'>
             {concept.fullDescription}
           </h1>
           <div className='col-span-2 col-start-4'>
+            <div>
+              <img className='max-h-50' src='/img/logo.png' alt='' />
+            </div>
             <Link to={'http://localhost:8080/api/documents/download'}>
               <h1 className='text-lg text-violet-700'>Scarica il prospetto</h1>
             </Link>
-            <div>
-              <img className='max-h-40' src='/img/dati.svg' alt='' />
-            </div>
           </div>
           <div className='col-start-3 pt-18'>
             {' '}

@@ -14,22 +14,27 @@ export default function FaqSection() {
       <h1 className='pt-5 pb-26 text-8xl font-bold text-indigo-700 text-shadow-lg'>
         FAQ
       </h1>
-      <div>
-        {faq.map(faqInner => {
-          return (
-            <div className='collapse max-w-5xl border border-gray-300 bg-gray-100'>
-              <input type='radio' name='my-accordion-1' defaultChecked />
-              <div className='collapse-title font-semibold text-indigo-700'>
-                {faqInner.question}
+      <div className='grid grid-cols-5'>
+        <div className='col-span-4'>
+          {faq.map(faqInner => {
+            return (
+              <div className='collapse max-w-5xl border border-gray-300 bg-gray-100'>
+                <input type='radio' name='my-accordion-1' defaultChecked />
+                <div className='collapse-title font-semibold text-indigo-700'>
+                  {faqInner.question}
+                </div>
+                <div className='collapse-content text-sm text-gray-800'>
+                  {faqInner.answers.map(answer => {
+                    return <p> {answer.content}</p>
+                  })}
+                </div>
               </div>
-              <div className='collapse-content text-sm text-gray-800'>
-                {faqInner.answers.map(answer => {
-                  return <p> {answer.content}</p>
-                })}
-              </div>
-            </div>
-          )
-        })}
+            )
+          })}
+        </div>
+        <div className='col-span-1 max-w-60'>
+          <img src='/img/qr.svg' alt='' />
+        </div>
       </div>
     </section>
   )
