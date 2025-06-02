@@ -22,7 +22,7 @@ export default function FullCard({ item }) {
         </h1>
 
         <div className='flex flex-col justify-between'>
-          <Link>
+          <Link to={'http://localhost:8080/api/documents/download'}>
             <h1 className='text-center font-bold text-blue-600/70'>
               Scarica l'informativa
             </h1>

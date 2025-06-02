@@ -27,7 +27,7 @@ export default function DetailPage() {
             {concept.fullDescription}
           </h1>
           <div className='col-span-2 col-start-4'>
-            <Link>
+            <Link to={'http://localhost:8080/api/documents/download'}>
               <h1 className='text-lg text-violet-700'>Scarica il prospetto</h1>
             </Link>
             <div>
