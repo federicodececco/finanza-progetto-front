@@ -28,24 +28,24 @@ export default function HomePage() {
         <div className='h-screen'>
           <Carousel className='z-0'></Carousel>
           <div className='mx-auto max-w-6xl text-indigo-700 italic'>
-            <h1 className='pt-6 text-left text-6xl font-semibold text-shadow-md'>
+            <h1 className='pt-6 text-center text-4xl font-semibold text-shadow-md lg:text-left lg:text-6xl'>
               Progetta il tuo domani...
             </h1>
-            <h1 className='pt-6 pr-12 text-right text-6xl font-semibold text-shadow-md'>
+            <h1 className='pt-6 pr-12 text-center text-4xl font-semibold text-shadow-md lg:text-right lg:text-6xl'>
               ...con noi
             </h1>
           </div>
         </div>
         {/* card section */}
-        <div className='h-screen'>
+        <div className='lg:h-screen'>
           <div className='relative mx-auto max-w-5xl'>
             <Hero></Hero>
             {/* cards */}
-            <div className='grid grid-cols-3'>
+            <div className='grid-cols-3 lg:grid'>
               {elements.map((element, index) => (
                 <div
                   key={element.id}
-                  className={`col-start-${1 + index} col-span-${3 - index}`}
+                  className={`py-4 lg:py-0 col-start-${1 + index} col-span-${3 - index}`}
                 >
                   <Card element={element} key={element.id}></Card>
                 </div>

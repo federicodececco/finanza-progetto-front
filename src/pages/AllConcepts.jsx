@@ -17,7 +17,7 @@ export default function AllConcepts() {
   return (
     <>
       <div className=''>
-        <div className='shadow-md'>
+        <div className='mt-15 shadow-md lg:mt-0'>
           <img src='/img/card.jpg' alt='' />
         </div>
         <div className='container mx-auto mt-8 mb-18 text-center text-5xl font-semibold text-indigo-700 italic text-shadow-md'>

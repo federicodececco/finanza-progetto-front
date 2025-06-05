@@ -10,10 +10,10 @@ export default function FullCard({ item }) {
       <input type='checkbox' />
       <div className='collapse-title flex justify-between font-semibold'>
         <h1>{item.name}</h1>
-        <h2 className='text-sm'>{item.description}</h2>
+        <h2 className='hidden text-sm lg:block'>{item.description}</h2>
       </div>
       <div className='collapse-content grid grid-cols-4 gap-6 align-bottom text-sm'>
-        <h1 className='col-span-3'>
+        <h1 className='col-span-4 lg:col-span-3'>
           {item.fullDescription}{' '}
           <Link className='text-violet-700' to={`details/${item.slug}`}>
             {' '}
@@ -21,8 +21,8 @@ export default function FullCard({ item }) {
           </Link>
         </h1>
 
-        <div className='flex flex-col justify-between'>
-          <Link to={'http://localhost:8080/api/documents/download'}>
+        <div className='flex justify-between gap-8 lg:flex-col lg:gap-0'>
+          <Link to={`${import.meta.env.VITE_BE_URL}/api/documents/download`}>
             <h1 className='text-center font-bold text-blue-600/70'>
               Scarica l'informativa
             </h1>

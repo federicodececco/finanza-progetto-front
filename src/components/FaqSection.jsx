@@ -10,7 +10,7 @@ export default function FaqSection() {
   }
   useEffect(() => fetchFaq(), [])
   return (
-    <section className='mt-4 h-screen p-10'>
+    <section className='mt-4 p-10 lg:h-screen'>
       <h1 className='pt-5 pb-26 text-8xl font-bold text-indigo-700 text-shadow-lg'>
         FAQ
       </h1>
@@ -32,7 +32,7 @@ export default function FaqSection() {
             )
           })}
         </div>
-        <div className='col-span-1 max-w-60'>
+        <div className='col-span-1 hidden max-w-60 lg:block'>
           <img src='/img/qr.svg' alt='' />
         </div>
       </div>

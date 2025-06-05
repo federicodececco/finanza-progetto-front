@@ -50,12 +50,12 @@ export default function Carousel() {
                     </h3>
                     <p className='text-white/90'>{item.description}</p>
                     <div className='p-8 text-white/90'>
-                      <ul className='list-disc'>
+                      <ul className='hidden list-disc lg:block'>
                         {item.features.map(feat => {
                           return <li className='text-left'>{feat}</li>
                         })}
                       </ul>
-                      <button className='cursor-pointer pt-2'>
+                      <button className='hidden cursor-pointer pt-2 lg:block'>
                         {item.cta}
                       </button>
                     </div>
@@ -67,19 +67,19 @@ export default function Carousel() {
 
         <button
           onClick={prevSlide}
-          className='absolute top-1/2 left-4 -translate-y-1/2 transform cursor-pointer rounded-full bg-white p-2'
+          className='absolute top-1/2 left-4 hidden -translate-y-1/2 transform cursor-pointer rounded-full bg-white p-2 md:block'
         >
           <ChevronLeft />
         </button>
 
         <button
           onClick={nextSlide}
-          className='bg-opacity-75 hover:bg-opacity-100 absolute top-1/2 right-4 -translate-y-1/2 transform cursor-pointer rounded-full bg-white p-2'
+          className='bg-opacity-75 hover:bg-opacity-100 absolute top-1/2 right-4 hidden -translate-y-1/2 transform cursor-pointer rounded-full bg-white p-2 md:block'
         >
           <ChevronRight />
         </button>
 
-        <div className='absolute bottom-4 left-1/2 flex -translate-x-1/2 transform space-x-2'>
+        <div className='absolute bottom-4 left-1/2 flex hidden -translate-x-1/2 transform space-x-2 md:block'>
           {elements.map((item, index) => (
             <button
               key={item.id}
