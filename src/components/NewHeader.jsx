@@ -105,7 +105,7 @@ export default function NewHeader() {
       <div className='navbar-end'>
         <a
           className='btn bg-violet-700 text-white hover:bg-blue-600/50'
-          href='http://localhost:8080/login'
+          href={`${import.meta.env.VITE_BE_URL}/login`}
         >
           Log In
         </a>

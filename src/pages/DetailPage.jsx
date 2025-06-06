@@ -31,7 +31,7 @@ export default function DetailPage() {
               <img className='max-h-50' src='/img/logo.png' alt='' />
             </div>
             <Link
-              to={'http://localhost:8080/api/documents/download'}
+              to={'{import.meta.env.VITE_BE_URL}/api/documents/download'}
               className='col-start-3 pt-6 lg:pt-0'
             >
               <h1 className='text-lg text-violet-700'>Scarica il prospetto</h1>
