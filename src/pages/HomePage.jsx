@@ -45,7 +45,7 @@ export default function HomePage() {
               {elements.map((element, index) => (
                 <div
                   key={element.id}
-                  className={`py-4 lg:py-0 col-start-${1 + index} col-span-${3 - index}`}
+                  className={`py-4 lg:py-0 col-start-${1 + index} col-span-3`}
                 >
                   <Card element={element} key={element.id}></Card>
                 </div>
