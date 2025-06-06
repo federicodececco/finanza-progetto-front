@@ -1,20 +1,25 @@
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router'
 export default function NewHeader() {
-  const [show, setShow] = useState(true)
+  const [show, setShow] = useState(false)
   const [lastScrollY, setLastScrollY] = useState(0)
 
   const controlNavbar = () => {
-    if (window.scrollY < lastScrollY) {
+    const currentScrollY = window.scrollY
+    if (currentScrollY < lastScrollY) {
       // hide navbar
       setShow(false)
     } else {
       // show navbar
       setShow(true)
     }
-
+    if (currentScrollY <= 100) {
+      setShow(false)
+    }
     // store last scroll
-    setLastScrollY(window.scrollY)
+    setLastScrollY(currentScrollY)
+    console.log(show)
+    console.log(currentScrollY)
   }
   useEffect(() => {
     window.addEventListener('scroll', controlNavbar)
