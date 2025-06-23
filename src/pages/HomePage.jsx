@@ -20,8 +20,6 @@ export default function HomePage() {
     return newElements
   }
 
-  const myVar = process.env.REACT_APP_MY_VAR
-  console.log('My Env Var:', myVar)
   useEffect(() => {
     fetchElements()
   }, [])
