@@ -18,8 +18,6 @@ export default function NewHeader() {
     }
     // store last scroll
     setLastScrollY(currentScrollY)
-    console.log(show)
-    console.log(currentScrollY)
   }
   useEffect(() => {
     window.addEventListener('scroll', controlNavbar)
