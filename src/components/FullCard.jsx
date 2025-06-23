@@ -22,11 +22,11 @@ export default function FullCard({ item }) {
         </h1>
 
         <div className='flex justify-between gap-8 lg:flex-col lg:gap-0'>
-          <Link to={`${import.meta.env.VITE_BE_URL}/api/documents/download`}>
+          <a href={`${import.meta.env.VITE_BE_URL}/api/documents/download`}>
             <h1 className='text-center font-bold text-blue-600/70'>
               Scarica l'informativa
             </h1>
-          </Link>
+          </a>
           <div className='flex items-end justify-center text-center'>
             <div
               className='tooltip rounded-2xl bg-indigo-700/70 px-2 py-1 text-white'
